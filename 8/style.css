@@ -1,0 +1,201 @@
+@font-face {
+ font-family: "Open Sans ExLight";
+ src: url("../fonts/OpenSans-300.ttf") format("truetype")
+}
+
+@font-face {
+ font-family: "Open Sans Regular";
+ src: url("../fonts/OpenSans-600.ttf") format("truetype")
+}
+
+html{
+  font-size: clamp(12px, 1.2vw,100px);
+}
+
+*{
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans ExLight',sans-serif;
+}
+
+header{
+	background-color:#3e477d;
+	width:100%;
+	display: flex;
+	padding: clamp(5px,2vw,20px) clamp(10px,3vw,200px);
+	justify-content: space-between;
+	align-items: center;
+}
+
+header a{
+	color:white;
+	text-decoration: none;
+	font-size: 1.5rem;
+	-webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    display:inline-block;
+}
+
+header a:hover{
+	font-family: 'Open Sans Regular';
+}
+
+header a:after {
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    background-color: white;
+    transition: width 0.4s ease-in-out;
+}
+header a:hover:after,
+header a:focus:after {
+    width: 100%;
+}
+
+
+/********************FLAT**********************/
+.flat{
+	width: 100%;
+  padding: clamp(80px, 20vw, 150px) 0 clamp(30px, 20vw, 50px) 0;
+	background-color: #20222e;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.flat img{
+	filter:brightness(0.5);
+	width: 80vw;
+}
+
+.flat h2{
+	color:white;
+	position: absolute;
+	z-index: 4;
+	top:65%;
+	left: 5%;
+	font-size: 1.7rem;
+}
+
+/**************APPLE&&FLIKR****************/
+
+.apple-flikr{
+	display: flex;
+	width: 100%;
+	padding:5vw;
+	justify-content: space-between;
+}
+
+.apple-flikr img{
+  max-width: 100%;
+	width: clamp(150px,25vw,500px);
+	box-shadow: clamp(10px,7vw,50px) 3vw 0 0 #3e477d;
+	height: clamp(150px,25vw,500px);
+	margin-right: clamp(20px,8vw,70px);
+  margin-bottom: clamp(20px,8vw,70px);
+}
+
+.apple-flikr div{
+	width: 54vw;
+}
+
+h3{
+	font-size: 1.3rem;
+	margin-bottom: 2vw;
+}
+
+.apple-flikr  p{
+	font-size: 1rem;
+	margin-bottom:3.8vw;
+}
+
+.apple-flikr a{
+	text-decoration:none;
+	padding:0.8vw 2vw;
+	background-color: #3e477d;
+	color:white;
+	font-size: 1rem;
+}
+
+.apple-flikr a:hover{
+	background-color: #20222e;
+}
+
+/**************scvemorhism*****************/
+
+.scvemorhism {
+	width: 100%;
+	padding:clamp(80px, 20vw, 150px) 0;
+	background:linear-gradient(236deg, #620808,#20222e);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.scvemorhism img{
+	width: 20vw;
+	margin-bottom: 1.5vw;
+}
+
+.scvemorhism h2{
+  text-align: center;
+	color:white;
+	top:65%;
+	left: 5%;
+	font-size: 1.7rem;
+}
+
+.flickr img{
+  max-width: 100%;
+	width: clamp(150px,25vw,500px);
+	box-shadow: clamp(10px,7vw,50px) 3vw 0 0 #3e477d;
+	height: clamp(150px,25vw,500px);
+	margin-left: clamp(20px,8vw,70px);
+  margin-bottom: clamp(20px,8vw,70px);
+	box-shadow: -7vw 3vw 0 0 #620808;
+	margin-right: 0;
+
+}
+
+.flickr a{
+	background-color: #620808;
+}
+
+.flickr a:hover{
+background-color:#420707;
+}
+
+.button-in-2015{
+	width: 100%;
+	padding: 2vw;
+	display: flex;
+	justify-content: center;
+}
+
+.button-in-2015 a{
+	width: 50%;
+	padding: 1vw;
+	background-color: #3e477d;
+	color:#fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	font-size: 1rem;
+}
+
+.button-in-2015 a:hover{
+	background-color: #20222e;
+}
+
+@media (max-width:450px){
+  .apple-flikr{
+    flex-direction: column;
+  }
+
+  .apple-flikr div{
+    width: 100%;
+  }
+}

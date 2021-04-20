@@ -1,0 +1,182 @@
+@font-face {
+ font-family: "Open Sans Light";
+ src: url("../fonts/OpenSans-400.ttf") format("truetype")
+}
+
+@font-face {
+ font-family: "Open Sans Regular";
+ src: url("../fonts/OpenSans-600.ttf") format("truetype")
+}
+
+@font-face {
+ font-family: "Open Sans Bold";
+ src: url("../fonts/OpenSans-700.ttf") format("truetype")
+}
+
+@font-face {
+ font-family: "Rubik";
+ src: url("../fonts/RubikMonoOne-Regular.ttf") format("truetype")
+}
+
+html{
+  font-size: clamp(12px,1.1vw,100px);
+}
+
+*{
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+	font-family: 'Open Sans Light';
+}
+
+h1,h2{
+	color:#ffcc00;
+}
+
+body{
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	flex-direction: column;
+	align-items: center;
+	padding: 30px;
+}
+
+nav{
+  max-width: 900px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom:90px;
+}
+
+nav a{
+	color:#ffcc00;
+	text-decoration: none;
+	padding: 12px 15px;
+}
+
+nav a:hover{
+	border:2px solid #ffcc00;
+	border-radius: 5px;
+}
+
+
+.header{
+	display: flex;
+  justify-content: center;
+  max-width: 900px;
+	width: 100%;
+	margin-bottom:90px;
+}
+
+.header img{
+	width:clamp(80px,15vw,400px);
+	transform: rotate(-10deg);
+	margin-top:60px;
+}
+
+.header h1{
+	font-family: 'Rubik';
+	font-size: 7rem;
+	line-height: 0.4;
+}
+
+.header span{
+	font-size: 1.4rem;
+	font-family: 'Open Sans Light';
+	font-weight: 300;
+  line-height: 0;
+}
+
+h2{
+	font-family: 'Open Sans Bold';
+	font-weight: 700;
+}
+
+.content{
+	display: flex;
+  max-width: 900px;
+	width: 100%;
+	justify-content: space-between;
+	align-items:flex-start;
+	padding-bottom: clamp(30px,5vw,120px);
+}
+
+.content p{
+	color:rgba(255,255,255,0.5);
+}
+
+.content hr{
+	width: clamp(100px,30%,1000px);
+	height: 2px;
+	background-color: #ffcc00;
+	border:none;
+	margin:15px 0 20px 0;
+}
+.content img{
+	width: 45%;
+	margin-right: 20px;
+}
+
+ button{
+	margin-top:20px;
+	padding: 12px 15px;
+}
+
+.sites h2{
+	line-height: 2;
+	font-size: 2.5rem;
+	text-align: center;
+	font-weight: 300;
+}
+
+.sites h2 span{
+	font-family: 'Rubik';
+	font-size: 4rem;
+	line-height: 1;
+}
+
+@media (max-width:520px){
+  .header h1{
+    font-size: 5rem;
+  }
+
+  .sites h2{
+    font-size: 1.5rem;
+  }
+
+  .sites h2 span{
+    font-size: 2rem;
+  }
+
+  .content{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+  }
+  .content img{
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width:330px){
+  .header h1{
+    font-size: 3.7rem;
+  }
+
+  .sites h2{
+    font-size: 1.2rem;
+  }
+
+  .sites h2 span{
+    font-size: 1.6rem;
+  }
+
+  .header span{
+    font-size: 1rem;
+  }
+
+}
